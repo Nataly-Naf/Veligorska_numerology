@@ -1,10 +1,45 @@
 <section class="hero-section">
   <div class="container">
+    <div class="main-photo-wrapper">
+      <picture class="main-photo">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./img/components/milkchok_desk@1x.png 1x,
+            ./img/hero/portrait.png               2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/components/milkchocolate_tab@1x.png 1x,
+            ./img/components/milkchocolate_tab@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            ./img/components/milkchocolate@1x.png 1x,
+            ./img/components/milkchocolate@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          src="./img/hero/portrait.png"
+          alt="Milk chocolate"
+          class="images-components"
+          width="655"
+        />
+      </picture>
+    </div>
     <div class="hero-wrapper">
       <h1 class="visually-hidden">Simply chocolate</h1>
       <h2 class="hero-subtitle">
         Cтвори своє щасливе життя завдяки Законам Карми!
       </h2>
+
       <!-- <img class="img-test" src="/img/hero/FAiBR.png" alt="hjkhkjh" /> -->
       <div class="hero-btn-wrapper">
         <ul class="hero-list-btn list">

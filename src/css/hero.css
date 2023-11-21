@@ -19,7 +19,18 @@
     padding-bottom: 72px;
   }
 }
-
+.main-photo {
+  width: 1200px;
+  display: inline;
+}
+.main-photo-wrapper {
+  position: absolute;
+  top: -8px;
+  right: 180px;
+  width: 600px;
+  height: 700px;
+  overflow: hidden;
+}
 .hero-wrapper {
   display: flex;
   flex-direction: column;
@@ -110,6 +121,7 @@
 /*========== Subtitle ==========*/
 
 .hero-subtitle {
+  font-style: italic;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 20px;
