@@ -6,9 +6,9 @@
       </svg>
     </button>
     <h2 class="modal-buy-form-title">
-      Buy <span class="modal-buy-form-title-right">now</span>
+      Записатися <span class="modal-buy-form-title-right">на консультацію</span>
     </h2>
-    <ul class="modal-buy-product-list list">
+    <!-- <ul class="modal-buy-product-list list">
       <li class="modal-buy-product-item">
         <picture>
           <source
@@ -39,8 +39,8 @@
         </picture>
         <span class="modal-buy-weight-wrapper">300g </span>
       </li>
-    </ul>
-    <p class="modal-buy-form-input-desc">Personal information</p>
+    </ul> -->
+    <p class="modal-buy-form-input-desc">Персональна інформація</p>
     <form class="modal-buy-form">
       <span class="modal-buy-name-thumb">
         <label class="modal-buy-form-label modal-name-field">
@@ -48,73 +48,47 @@
             type="text"
             name="user_name"
             class="modal-buy-form-input"
-            placeholder="Name"
+            placeholder="Ім'я"
             required
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
         /></label>
         <label class="modal-buy-form-label modal-name-field">
           <input
             type="text"
             name="user_surname"
             class="modal-buy-form-input"
-            placeholder="Surname"
-            required
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" /></label
+            placeholder="Прізвище"
+            required /></label
       ></span>
       <label class="modal-buy-form-label">
-        <span class="modal-buy-form-input-desc">Email</span>
+        <span class="modal-buy-form-input-desc">Адреса електронної пошти</span>
         <input
           type="email"
           name="user_mail"
           class="modal-buy-form-input"
-          placeholder="Enter your email"
+          placeholder="Введіть вашу електронну пошту"
           required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         />
       </label>
       <label class="modal-buy-form-label">
-        <span class="modal-buy-form-input-desc">Phone number</span>
+        <span class="modal-buy-form-input-desc">Номер телефону</span>
         <span class="modal-buy-input-wrapper buy-tel-thumb"
           ><input
             type="tel"
             name="user_phone"
             class="modal-buy-form-input buy-tel"
-            placeholder="Phone number"
+            placeholder="097 xxx xx xx"
             required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><svg
+          />
+          <!-- <svg
             class="modal-buy-ukraine-icon"
             width="22"
             height="13"
           >
-            <use href="/img/spryte.svg#ukraine-flag"></use></svg
-        ></span>
+            <use href="/img/spryte.svg#ukraine-flag"></use></svg> -->
+        </span>
       </label>
-      <label class="modal-buy-form-label">
-        <span class="modal-buy-form-input-desc">Card number</span>
-        <span class="modal-buy-input-wrapper">
-          <input
-            type="text"
-            name="user_card"
-            class="modal-buy-form-input buy-card"
-            placeholder="Enter card"
-            required
-            pattern="[0-9]{13,16}" /><svg
-            class="modal-buy-mastercard-icon"
-            width="22"
-            height="13"
-          >
-            <use href="/img/spryte.svg#mastercard"></use></svg
-        ></span>
-      </label>
-      <label class="modal-buy-form-label">
-        <span class="modal-buy-form-input-desc">Comment</span>
-        <textarea
-          name="user_message"
-          class="modal-buy-form-message"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
-      <button type="submit" class="modal-buy-form-btn">Submit</button>
+
+      <button type="submit" class="modal-buy-form-btn">Відправити</button>
     </form>
   </div>
 </div>
