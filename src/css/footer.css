@@ -146,10 +146,10 @@
     letter-spacing: -0.02em;
     text-align: left;
   }
-  .footer-social-media-icon {
-    width: 24px;
-    height: 24px;
-  }
+  /* .footer-social-media-icon {
+    width: 32px;
+    height: 32px;
+  } */
 }
 
 @media screen and (min-width: 1200px) {

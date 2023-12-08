@@ -113,7 +113,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url('/img/hero/hero-chocolate_desk.jpg');
+      url('/img/hero/pink-abstraction_desk');
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -125,7 +125,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('/img/hero/Absolute_Reality_v16_light_colors_beige_violet_gradient_0.jpg');
+        url('/img/hero/pink-abstraction_desk@2x');
     }
   }
 }
