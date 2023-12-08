@@ -125,7 +125,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url('/img/hero/pink-abstraction_desk@2x');
+        url('./img/hero/pink-abstraction_desk@2x');
     }
   }
 }
