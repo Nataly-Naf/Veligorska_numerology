@@ -55,7 +55,7 @@
   background-color: #ffffff;
   box-sizing: border-box;
   width: 335px;
-  height: 200px;
+  height: 250px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
@@ -217,6 +217,7 @@
 
   .chocolate-is-loved-cnt {
     margin-right: 28px;
+    height: 480px;
   }
 
   .chocolate-is-loved-title {
