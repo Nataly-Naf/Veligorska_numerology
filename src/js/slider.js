@@ -4,7 +4,7 @@ $(document).ready(function () {
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    speed: 7100,
+    speed: 100,
     autoplay: true,
     autoplaySpeed: 1500,
     pauseOnHover: true,
