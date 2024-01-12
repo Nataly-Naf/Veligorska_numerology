@@ -20,7 +20,7 @@
 /* Desription */
 .made-video-wrapper {
   width: 335px;
-  height: 500px;
+
   overflow: hidden;
   border-radius: 15px;
 }
@@ -157,21 +157,19 @@
 
   .made-video {
     justify-content: center;
-    width: 614px;
-    height: 400px;
+    width: 300px;
   }
 
   .made-container {
-    flex-direction: column;
+    height: 485px;
     align-items: center;
     display: flex;
-    padding-left: 77px;
-    padding-right: 77px;
+
     gap: 20px;
   }
   .made-video-wrapper {
-    width: 613px;
-    height: 400px;
+    width: 300px;
+
     overflow: hidden;
   }
   .made-chocolate-video {
@@ -185,7 +183,8 @@
 
   .made-description {
     justify-content: center;
-    width: 614px;
+
+    height: 100%;
     padding: 20px;
   }
 
@@ -207,7 +206,9 @@
 
   .made-container {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    height: 564px;
+    gap: 30px;
   }
   .made-section {
     padding-top: 128px;
@@ -215,20 +216,25 @@
   }
 
   .made-description {
-    width: 516px;
-    height: 400px;
+    width: 700px;
+    height: 100%;
 
     padding: 20px;
   }
 
   .made-video-wrapper {
-    width: 600px;
-    height: 400px;
+    width: 350px;
+
     overflow: hidden;
   }
   .made-chocolate-video {
     height: 100%;
   }
+  .description-list-item {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
   .description-list-item:not(:last-child) {
     margin-bottom: 24px;
   }
