@@ -24,12 +24,12 @@
   padding-top: 20px;
   padding-bottom: 14px;
 }
-.header-logo-simply {
+.header-logo-name {
   font-style: italic;
   display: flex;
   flex-direction: column;
 }
-.header-logo-numer {
+.header-logo-profession {
   text-align: right;
   font-size: 13px;
 }
@@ -126,18 +126,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: transparent;
-  width: 28px;
-  height: 28px;
+  color: var(--main-light-font-color);
+  width: 32px;
+  height: 32px;
 }
 .mob-menu-social-icon {
-  stroke: var(--main-light-font-color);
   fill: currentColor;
-  transition: stroke var(--transition-main);
+  transition: fill var(--transition-main);
 }
 .mob-menu-social-icon:hover,
 .mob-menu-social-icon:focus {
-  stroke: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -145,7 +144,7 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .header-logo-numer {
+  .header-logo-profession {
     text-align: right;
     font-size: 13px;
   }
@@ -197,7 +196,7 @@
     padding-bottom: 32px;
     /* margin-right: 188px; */
   }
-  .header-logo-numer {
+  .header-logo-profession {
     font-size: 15px;
   }
   .header-nav-list {
@@ -230,19 +229,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: transparent;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     padding-top: 24px;
     padding-bottom: 32px;
   }
   .header-social-icon {
-    stroke: #111111;
-    fill: currentColor;
-    transition: stroke var(--transition-main);
+    transition: fill var(--transition-main);
   }
   .header-social-icon:hover,
   .header-social-icon:focus {
-    stroke: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
