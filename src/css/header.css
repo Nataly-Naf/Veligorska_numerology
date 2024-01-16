@@ -14,7 +14,7 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--main-dark-font-color);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -44,14 +44,14 @@
   height: 28px;
 }
 .mobile-menu-open-icon {
-  stroke: #111111;
+  stroke: var(--main-dark-font-color);
 }
 .mobile-menu {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: #1e1823;
+  background-color: var(--main-dark-background-color);
   height: 100%;
   width: 220px;
   transform: translateX(100%);

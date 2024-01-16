@@ -1,0 +1,57 @@
+<div class="consultation-backdrop is-hidden" data-modal>
+  <div class="modal-consultation">
+    <button class="modal-cons-close-btn" type="button" data-modal-close>
+      <svg class="modal-cons-close-icon" width="16" height="16">
+        <use href="./img/spryte.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-cons-form-title">
+      Записатися
+      <span class="modal-cons-form-title-right">на консультацію</span>
+    </h2>
+    <p class="modal-cons-form-input-desc">Персональна інформація</p>
+    <form class="modal-cons-form">
+      <span class="modal-cons-name-thumb">
+        <label class="modal-cons-form-label modal-name-field">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-cons-form-input"
+            placeholder="Ім'я"
+            required
+        /></label>
+        <label class="modal-cons-form-label modal-name-field">
+          <input
+            type="text"
+            name="user_surname"
+            class="modal-cons-form-input"
+            placeholder="Прізвище"
+            required
+          />
+        </label>
+      </span>
+      <label class="modal-cons-form-label">
+        <span class="modal-cons-form-input-desc">Адреса електронної пошти</span>
+        <input
+          type="email"
+          name="user_mail"
+          class="modal-cons-form-input"
+          placeholder="Введіть вашу електронну пошту"
+          required
+        />
+      </label>
+      <label class="modal-cons-form-label">
+        <span class="modal-cons-form-input-desc">Номер телефону</span>
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-cons-form-input"
+          placeholder="097 xxx xx xx"
+          required
+        />
+      </label>
+
+      <button type="submit" class="modal-cons-form-btn">Відправити</button>
+    </form>
+  </div>
+</div>
