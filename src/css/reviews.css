@@ -1,69 +1,45 @@
-.general-container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0px 20px;
+.reviews-section {
+  padding: 0 0 72px;
 }
 
-.chocolate-is-loved-section {
-  background-color: var(--dark-white-color);
-  padding-bottom: 72px;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.chocolate-is-loved-title {
-  font-family: 'Montserrat' sans-serif;
-  font-style: normal;
+.reviews-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--black-color);
-  margin-bottom: 32px;
-  margin-top: 0;
+  color: var(--main-dark-font-color);
+  margin: 0 0 32px;
 }
 
-.chocolate-is-loved-span {
+.reviews-title-span {
   color: var(--accent-color);
 }
 
-.chocolate-is-loved-slider {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.chocolate-is-loved-cnt {
+.reviews-cnt {
   position: relative;
   text-align: center;
   margin-right: 10px;
-  margin-bottom: 20px;
-  height: 240px;
-  background-color: var(--dark-white-color);
+  margin-bottom: 30px;
+  height: 320px;
 }
 
-.chocolate-is-loved-cnt > img {
+.reviews-cnt > img {
   border-radius: 50%;
   width: 80px;
   height: 80px;
 }
 
 .inner-cnt {
-  background-color: #ffffff;
+  background-color: var(--main-light-font-color);
   box-sizing: border-box;
-  overflow-y: scroll;
   width: 335px;
-  height: 400px;
+  height: 300px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
-  padding-top: 56px;
-  padding-bottom: 42px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 56px 18px 42px 18px;
   margin-top: 40px;
 }
 
@@ -73,85 +49,39 @@
   left: 127.5px;
 }
 
-.chocolate-loved-names {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33;
-  font-family: 'Montserrat' sans-serif;
-  font-style: normal;
-  text-align: center;
-  color: var(--black-color);
-  padding-bottom: 24px;
-}
-
-.chocolate-loved-text {
-  font-family: 'Montserrat' sans-serif;
-  font-style: normal;
+.reviews-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.3;
   text-align: center;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.28px;
   color: rgba(17, 17, 17, 0.7);
 }
 
-.chocolate-is-loved-button {
-  font-family: 'Montserrat' sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  text-align: center;
-  color: var(--black-color);
-  padding: 12px 28px;
-  border: 1px solid var(--accent-color);
-  border-radius: 100px;
-  background-color: transparent;
-  margin-top: 32px;
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.choco-loved-btn-cnt {
+/* slider styles */
+.slick-track {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-
-.chocolate-is-loved-button:hover {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-}
-
-/* min-width:0; needed for the sliders work! */
-
-/* sliders styles */
 
 .slick-dots li button:before {
   content: '';
-}
-
-.slick-track {
-  display: flex;
 }
 
 .slick-list {
   overflow: hidden;
 }
 
-.chocolate-is-loved-slider .slick-dots {
+.reviews-slider .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.chocolate-is-loved-slider .slick-dots li {
-  list-style: none;
+.reviews-slider .slick-dots li {
   margin-right: 13px;
 }
 
-.chocolate-is-loved-slider .slick-dots button {
+.reviews-slider .slick-dots button {
   font-size: 0;
   width: 13px;
   height: 13px;
@@ -160,73 +90,44 @@
   border: none;
 }
 
-.chocolate-is-loved-slider .slick-dots li.slick-active button {
+.reviews-slider .slick-dots li.slick-active button {
   background-color: var(--accent-color);
   width: 28px;
   height: 13px;
   border-radius: 100px;
 }
 
-.chocolate-is-loved-slider .slick-dots li:nth-child(n + 7):nth-child(-n + 9) {
-  display: none;
-}
-
-/* BREAK POINTS */
-
-/* TABLETS Break Points */
+/* For tablets */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .chocolate-is-loved-title {
-    font-size: 24px;
-    line-height: 1.17;
-    margin-top: 100px;
-  }
-
-  .chocolate-is-loved-button {
-    line-height: 1.22;
-  }
-
-  .chocolate-is-loved-section {
+  .reviews-section {
     padding-bottom: 100px;
   }
-
-  .chocolate-is-loved-cnt {
-    margin-right: 16px;
-  }
-
-  .chocolate-is-loved-title {
+  .reviews-title {
+    font-size: 24px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
-
-  .chocolate-is-loved-cnt {
+  .reviews-cnt {
+    margin-right: 16px;
     margin-bottom: 31px;
   }
 }
 
-/* DESKTOP Break Points */
+/* For desktop */
 @media screen and (min-width: 1200px) {
-  .chocolate-is-loved-title {
-    font-size: 24px;
-    line-height: 1.17;
-    margin-top: 128px;
-  }
-
-  .chocolate-is-loved-button {
-    line-height: 1.22;
-  }
-
-  .chocolate-is-loved-section {
+  .reviews-section {
     padding-bottom: 128px;
   }
 
-  .chocolate-is-loved-cnt {
-    margin-right: 28px;
-  }
-
-  .chocolate-is-loved-title {
+  .reviews-title {
+    font-size: 24px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 
-  .chocolate-is-loved-cnt {
+  .reviews-cnt {
+    height: 320px;
+    margin-right: 28px;
     margin-bottom: 31px;
   }
 }

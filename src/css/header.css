@@ -9,32 +9,37 @@
 .header-nav {
   display: none;
 }
-.header-social-list {
-  display: none;
-}
 .header-logo {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--main-dark-font-color);
   display: flex;
   align-items: center;
   gap: 10px;
   padding-top: 20px;
   padding-bottom: 14px;
 }
-.header-logo-simply {
-  font-style: italic;
+.header-logo-name {
+  font-family: 'Carattere', cursive;
+  font-weight: 600;
+  font-size: 26px;
   display: flex;
   flex-direction: column;
 }
-.header-logo-numer {
+.header-logo-profession {
+  font-family: 'Montserrat', sans-serif;
   text-align: right;
   font-size: 13px;
+  margin-top: -3px;
+}
+.header-social-list {
+  display: none;
 }
 
-/*                                  Mobile menu /////////////////////////////////////*/
+/* Mobile menu */
+
 .mobile-menu-open-btn {
   display: flex;
   align-items: center;
@@ -43,15 +48,14 @@
   height: 28px;
 }
 .mobile-menu-open-icon {
-  stroke: #111111;
+  stroke: var(--main-dark-font-color);
 }
-
 .mobile-menu {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: #1e1823;
+  background-color: var(--main-dark-background-color);
   height: 100%;
   width: 220px;
   transform: translateX(100%);
@@ -61,21 +65,21 @@
   transform: translateX(0);
 }
 .mobile-menu-container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   padding-top: 136px;
   padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
 }
 .mobile-menu-close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 28px;
-  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 28px;
+  height: 28px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -107,17 +111,6 @@
 .mobile-nav-link:focus {
   color: var(--accent-color);
 }
-
-/* .mobile-nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  z-index: 101;
-  display: inline-block;
-  width: 24px;
-  border: 1px solid var(--accent-color);
-} */
 .mob-menu-social-list {
   display: flex;
   gap: 18px;
@@ -126,28 +119,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: transparent;
-  width: 28px;
-  height: 28px;
+  color: var(--main-light-font-color);
+  width: 32px;
+  height: 32px;
 }
 .mob-menu-social-icon {
-  stroke: var(--main-light-font-color);
   fill: currentColor;
-  transition: stroke var(--transition-main);
+  transition: fill var(--transition-main);
 }
 .mob-menu-social-icon:hover,
 .mob-menu-social-icon:focus {
-  stroke: var(--accent-color);
+  fill: var(--accent-color);
 }
+
+/* For tablet */
 
 @media only screen and (min-width: 768px) {
   .header-logo {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  .header-logo-numer {
+  .header-logo-name {
+    font-size: 28px;
+  }
+  .header-logo-profession {
     text-align: right;
-    font-size: 13px;
+    font-size: 15px;
   }
   .mobile-menu-open-btn {
     height: 32px;
@@ -178,10 +175,10 @@
     margin-left: 53px;
   }
 }
+
+/* For desktop  */
+
 @media only screen and (min-width: 1200px) {
-  /* .header-container {
-    justify-content: flex-start;
-  } */
   .mobile-menu-open-btn {
     display: none;
   }
@@ -195,9 +192,11 @@
     font-size: 18px;
     line-height: 1.11;
     padding-bottom: 32px;
-    /* margin-right: 188px; */
   }
-  .header-logo-numer {
+  .header-logo-name {
+    font-size: 30px;
+  }
+  .header-logo-profession {
     font-size: 15px;
   }
   .header-nav-list {
@@ -223,26 +222,21 @@
   .header-social-list {
     display: flex;
     gap: 18px;
-
-    /* margin-left: auto; */
   }
   .header-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: transparent;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     padding-top: 24px;
     padding-bottom: 32px;
   }
   .header-social-icon {
-    stroke: #111111;
-    fill: currentColor;
-    transition: stroke var(--transition-main);
+    transition: fill var(--transition-main);
   }
   .header-social-icon:hover,
   .header-social-icon:focus {
-    stroke: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
