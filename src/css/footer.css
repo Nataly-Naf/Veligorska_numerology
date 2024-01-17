@@ -120,8 +120,6 @@
   .footer-contacts {
     position: static;
   }
-  .footer-social-media-list {
-  }
   .footer-adress-wrapper {
     position: static;
   }
@@ -146,10 +144,6 @@
     letter-spacing: -0.02em;
     text-align: left;
   }
-  /* .footer-social-media-icon {
-    width: 32px;
-    height: 32px;
-  } */
 }
 
 @media screen and (min-width: 1200px) {

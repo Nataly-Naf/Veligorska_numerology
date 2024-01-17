@@ -22,13 +22,17 @@
   padding-bottom: 14px;
 }
 .header-logo-name {
-  font-style: italic;
+  font-family: 'Carattere', cursive;
+  font-weight: 600;
+  font-size: 26px;
   display: flex;
   flex-direction: column;
 }
 .header-logo-profession {
+  font-family: 'Montserrat', sans-serif;
   text-align: right;
   font-size: 13px;
+  margin-top: -3px;
 }
 .header-social-list {
   display: none;
@@ -135,9 +139,12 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .header-logo-name {
+    font-size: 28px;
+  }
   .header-logo-profession {
     text-align: right;
-    font-size: 13px;
+    font-size: 15px;
   }
   .mobile-menu-open-btn {
     height: 32px;
@@ -185,6 +192,9 @@
     font-size: 18px;
     line-height: 1.11;
     padding-bottom: 32px;
+  }
+  .header-logo-name {
+    font-size: 30px;
   }
   .header-logo-profession {
     font-size: 15px;
