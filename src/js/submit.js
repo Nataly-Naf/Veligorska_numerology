@@ -1,3 +1,7 @@
+import axios from 'axios';
+
+const BASE_URL = 'https://veligorska-cinsultation-contacts.onrender.com/api';
+
 const refs = {
   form: document.querySelector('.modal-cons-form'),
 };
@@ -6,7 +10,7 @@ const { user_name, user_surname, user_mail, user_phone } = refs.form.elements;
 
 refs.form.addEventListener('submit', onSubmit);
 
-function onSubmit(evt) {
+async function onSubmit(evt) {
   evt.preventDefault();
 
   if (
@@ -22,6 +26,13 @@ function onSubmit(evt) {
     email: user_mail.value,
     phone: user_phone.value,
   };
+
+  const response = await axios.post(`${BASE_URL}/contacts`, userData);
+  try {
+    console.log(response.data);
+  } catch (err) {
+    console.log(err);
+  }
 
   refs.form.reset();
 }
