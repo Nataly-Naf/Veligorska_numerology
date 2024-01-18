@@ -12,6 +12,7 @@ refs.form.addEventListener('submit', onSubmit);
 
 async function onSubmit(evt) {
   evt.preventDefault();
+  console.log(evt);
 
   if (
     user_name.value === '' ||
@@ -27,11 +28,19 @@ async function onSubmit(evt) {
     phone: user_phone.value,
   };
 
-  const response = await axios.post(`${BASE_URL}/contacts`, userData);
+  // const response = await axios.post(`${BASE_URL}/contacts`, userData);
+  // try {
+  //   console.log(response.data);
+  // } catch (err) {
+  //   console.log('ggg', err);
+  // }
+
   try {
+    const response = await axios.post(`${BASE_URL}/contacts`, userData);
     console.log(response.data);
   } catch (err) {
-    console.log(err);
+    alert(err.request.response);
+    console.log(err.request.response);
   }
 
   refs.form.reset();
