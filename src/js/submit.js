@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Notiflix from 'notiflix';
 
 const BASE_URL = 'https://veligorska-cinsultation-contacts.onrender.com/api';
 
@@ -12,7 +13,6 @@ refs.form.addEventListener('submit', onSubmit);
 
 async function onSubmit(evt) {
   evt.preventDefault();
-  console.log(evt);
 
   if (
     user_name.value === '' ||
@@ -28,20 +28,16 @@ async function onSubmit(evt) {
     phone: user_phone.value,
   };
 
-  // const response = await axios.post(`${BASE_URL}/contacts`, userData);
-  // try {
-  //   console.log(response.data);
-  // } catch (err) {
-  //   console.log('ggg', err);
-  // }
-
   try {
-    const response = await axios.post(`${BASE_URL}/contacts`, userData);
-    console.log(response.data);
+    await axios.post(`${BASE_URL}/contacts`, userData);
+    Notiflix.Report.success('Ваші дані відправлено! ', '', 'ОК');
+    refs.form.reset();
   } catch (err) {
-    alert(err.request.response);
-    console.log(err.request.response);
+    Notiflix.Report.failure(
+      'Клієнт з такою електронною адресою вже є в базі',
+      '',
+      'Редагувати дані',
+      { titleMaxLength: 50 }
+    );
   }
-
-  refs.form.reset();
 }
