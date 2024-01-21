@@ -1,2 +1,8 @@
 [build.processing]
-skip_processing = true
+  skip_processing = false
+[build.processing.css]
+  minify = true
+  bundle = false
+[build.processing.js]
+  minify = true
+  bundle = false
