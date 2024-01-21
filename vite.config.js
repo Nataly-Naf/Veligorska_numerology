@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: glob.sync('./src/*.html'),
     },
-    outDir: '../dist/Veligorska_numerology',
+    outDir: '../Veligorska_numerology',
   },
   plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 });
