@@ -1,2 +1,5 @@
 [build.processing.css]
 minify = false
+
+[build.processing]
+skip_processing = true
