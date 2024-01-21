@@ -12,5 +12,5 @@ export default defineConfig({
     outDir: '../dist',
   },
   plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
-  base: '/Veligorska_numerology/',
+  base: '/nimble-fox-c901c3/Veligorska_numerology/',
 });
