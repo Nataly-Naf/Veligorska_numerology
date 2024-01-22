@@ -105,7 +105,8 @@
   }
 
   .services-video-wrapper {
-    width: 300px;
+    width: 310px;
+    margin-bottom: -5px;
   }
 
   .services-description {
