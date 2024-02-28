@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Veligorska_numerology/",
+    "build": "vite build --base=/",
     "preview": "vite preview",
     "predeploy": "npm run build",
    "deploy": "netlify deploy -p"
