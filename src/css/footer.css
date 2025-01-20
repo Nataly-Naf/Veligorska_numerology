@@ -158,3 +158,10 @@
     margin-bottom: 24px;
   }
 }
+
+.oferta-button {
+  color: var(--main-light-font-color);
+  font-style: normal;
+  transition: color var(--transition-main);
+  margin-top: 50px;
+}

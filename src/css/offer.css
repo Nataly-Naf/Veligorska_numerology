@@ -1,0 +1,61 @@
+.offer-section {
+    display: none; /* По умолчанию скрыта */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.offer-container {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.offer-header {
+    padding: 15px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.offer-content {
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.offer-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff5c5c;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.offer-close-button:hover {
+    background-color: #ff1e1e;
+}
