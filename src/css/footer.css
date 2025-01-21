@@ -53,6 +53,7 @@
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.02em;
+  cursor: pointer;
   transition: color var(--transition-main);
 }
 .footer-contacts-item:hover,
@@ -67,6 +68,8 @@
   color: var(--main-light-font-color);
   font-style: normal;
   transition: color var(--transition-main);
+  cursor: pointer;
+
 }
 
 .footer-navigation-link:hover,

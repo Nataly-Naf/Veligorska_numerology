@@ -13,6 +13,7 @@
 @import url('./footer.css');
 @import url('./modal-consultation-appointment.css');
 @import url('./offer.css');
+@import url('./confident.css');
 
 :root {
   --primary-font: Montserrat, sans-serif;

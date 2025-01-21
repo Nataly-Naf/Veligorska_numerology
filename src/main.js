@@ -4,3 +4,4 @@ import './js/modal.js';
 import './js/submit.js';
 import './js/telegram-sender.js';
 import './js/offer.js';
+import './js/confident.js';
